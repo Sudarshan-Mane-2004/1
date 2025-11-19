@@ -74,7 +74,16 @@ Grant all privileges on facebook.* to 'sam'@'172.31.19.91';
 flush privileges;
 use facebook;
 create table posts(id int primary key auto_increment, name varchar(50), url varchar(100));
+
 ```
+## Inside Db Server make This Changes
+```
+cd /etc/mysql/mariadb.conf.d/
+sudo nano 50-server.cnf
+Blind-address    = 0.0.0.0
+
+```
+
 
 ## Frontend (form.html)
 
