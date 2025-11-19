@@ -188,8 +188,20 @@ echo "Error: " . $_FILES["anyfile"]["error"];
 }
 ?>
 ```
-## Nginx Configuration
-Configure PHP processing and document root.
+## Test Application
+```
+http://<APP-SERVER-PUBLIC-IP>/form.html
+```
+## Try uploading an image.
+
+Your file should:
+
+save temporarily inside EC2 uploads/
+
+upload to Amazon S3 bucket
+
+save name + image URL into DB-Server
+
 
 ---
 **Author**: Sudarshan Mane
